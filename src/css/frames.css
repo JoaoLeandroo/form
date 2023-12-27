@@ -1,0 +1,52 @@
+.frames {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.frame-1 {
+    animation: frame-1 50s infinite;
+    background-color: #00ff40;
+    border-radius: 50%;
+}
+.frame-2 {
+    animation: frame-2 50s infinite;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+@keyframes frame-1 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  50% {
+    bottom: 350px;
+    left: 600px;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes frame-2 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  50% {
+    top: 400px;
+    right: 800px;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+

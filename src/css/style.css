@@ -1,0 +1,114 @@
+:root {
+    --primaryWhite: #ffff;
+    --primaryBlack: #000000;
+    --primaryPurple: #7401DF;
+    --secundaryPurple: #4B088A;
+    --primaryGreen: #00FF40;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--primaryPurple);
+}
+
+main {
+    max-width: 1920px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+main .section-form {
+    max-width: 500px;
+    height: 500px;
+    width: 95%;
+    position: relative;
+}
+
+.section-form .box-image-contain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box-image-contain img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    opacity: 0.4;
+    border-radius: 8px;
+    box-shadow: 7px 7px 7px var(--primaryBlack);
+}
+
+.section-form .form-login {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-login .form-inputs-box {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inputs-box label {
+    font-weight: 900;
+    width: 90%;
+    color: var(--primaryWhite);
+    text-shadow: 2px 2px 2px var(--primaryBlack);
+    font-size: 19px;
+}
+
+.form-login h2 {
+    color: var(--primaryWhite);
+    text-shadow: 3px 3px 3px var(--primaryBlack);
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.form-inputs-box input {
+    width: 90%;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2be;
+    font-size: 17px;
+}
+
+.form-inputs-box input:focus {
+    border: 3px solid var(--primaryGreen);
+}
+
+.form-login .button-check {
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: var(--primaryPurple);
+    color: var(--primaryWhite);
+    transition: all 0.2s ease-in;
+}
+
+.form-login .button-check:hover {
+    background-color: var(--secundaryPurple);
+    color: var(--primaryWhite);
+    border: 3px solid var(--primaryGreen);
+    box-shadow: 2px 2px 2px var(--primaryGreen);
+}
