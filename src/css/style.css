@@ -15,6 +15,7 @@ main {
     max-width: 1920px;
     min-height: 100vh;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,4 +112,18 @@ main .section-form {
     color: var(--primaryWhite);
     border: 3px solid var(--primaryGreen);
     box-shadow: 2px 2px 2px var(--primaryGreen);
+}
+
+@media (max-width: 568px) {
+    main  {
+        align-items: normal;
+    }
+
+    main .section-form {
+        width: 100%;
+    }
+
+    .section-form .box-image-contain img {
+        height: 100vh;
+    }
 }
